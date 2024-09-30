@@ -32,9 +32,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: checkout code
-      uses: actions/checkout@v4.2.0
-    - name: Setup Python
-      uses: actions/setup-python@v5.2.0
-    - name: Run python app
-      uses: python demo_app.py
+      - name: checkout code
+        uses: actions/checkout@v4.2.0
+      - name: Setup Python
+        uses: actions/setup-python@v5.2.0
+      - name: Run python app
+        run: python demo_app.py
